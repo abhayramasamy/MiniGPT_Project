@@ -1,0 +1,4 @@
+tensorflow-cpu==2.16.1
+flask==3.0.3
+transformers==4.44.2
+numpy==1.26.4

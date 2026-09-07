@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.git
+.gitignore
+*.ipynb
+notebooks/
+checkpoint/
+optimizer_momentum.npz
+venv/
+.venv/
+.env
+.DS_Store
