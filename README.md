@@ -28,3 +28,8 @@ docker run -p 5000:5000 minigpt-server
 
 ## Docker curl test
 curl http://localhost:5000/
+
+## Note: The complete testing and publishing needs to be done...
+
+## hugging face link for the model files: 
+https://huggingface.co/ARX1A07/miniGPT_Project
