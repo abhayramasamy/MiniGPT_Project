@@ -25,7 +25,7 @@ This is the **first public pre-release**. It is a working, end-to-end system —
 Download `tinystories_50m_model.weights.h5` from the **Releases** page of this repo (attached to `v0.0.1`).
 
 **Option B — from Hugging Face**
-`[HF repo link — add here]`
+`[https://huggingface.co/ARX1A07/miniGPT_Project/tree/main]`
 
 Either way, once downloaded:
 ```
@@ -34,7 +34,7 @@ miniGPT-server/
     └── tinystories_50m_model.weights.h5   ← place the file here
 ```
 
-**See how it was built**: `[Colab notebook link — add here]`
+**See how it was built**: `[https://colab.research.google.com/drive/1DUSM24y3hcrc06BduC47kyWnciu8OGZg?usp=sharing]`
 
 ---
 
