@@ -24,7 +24,9 @@ This is the **first public pre-release**. It is a working, end-to-end system —
 **Option A — from this release**
 Download `tinystories_50m_model.weights.h5` from the **Releases** page of this repo (attached to `v0.0.1`).
 
-**Option B — from Hugging Face**
+**Option B — from Hugging Face**<br/>
+Also see Model card on Hugging face to know important model details, You can download the optimizer.npz file too incase you are planning to train/finetune.<br/> 
+*Visit my Hugging face Repo: :*
 `[https://huggingface.co/ARX1A07/miniGPT_Project/tree/main]`
 
 Either way, once downloaded:
@@ -34,7 +36,8 @@ miniGPT-server/
     └── tinystories_50m_model.weights.h5   ← place the file here
 ```
 
-**See how it was built**: `[https://colab.research.google.com/drive/1DUSM24y3hcrc06BduC47kyWnciu8OGZg?usp=sharing]`
+**See how it was built**: <br/>
+Observe the google colab notebook on how the model was built, trained the individual architectures`[https://colab.research.google.com/drive/1DUSM24y3hcrc06BduC47kyWnciu8OGZg?usp=sharing]`
 
 ---
 
