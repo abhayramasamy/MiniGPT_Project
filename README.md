@@ -13,7 +13,7 @@ This is the **first public pre-release**. It is a working, end-to-end system —
 - **Layers**: 5 decoder blocks · `d_model=768` · `12` attention heads · FFN hidden dim `3072`
 - **Context length**: 256 tokens
 - **Tokenizer**: `openai-community/gpt2` (BPE, vocab size 50,257)
-- **Training data**: TinyStories subset (~100M tokens), 3 epochs, mixed precision
+- **Training data**: TinyStories subset (~400-500M tokens), 2 epochs, mixed precision
 - **What it's good at**: short, grammatically coherent children's-story-style text
 - **What it's *not***: factual, knowledgeable, or good at long-range reasoning — this is a capacity-scale limitation, not a bug
 
