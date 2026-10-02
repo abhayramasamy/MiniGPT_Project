@@ -1,4 +1,4 @@
-# miniGPT / nanoLLAMA `v0.0.1` — Pre-release
+# miniGPT / nanoLLAMA `v.1.0.0` — Pre-release
 
 > A from-scratch, small-scale implementation of the Llama architecture (RMSNorm, RoPE, SwiGLU, decoder-only causal attention), trained on TinyStories and served via a containerized Flask inference API.
 
