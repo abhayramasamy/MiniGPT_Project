@@ -43,6 +43,11 @@ Observe the google colab notebook on how the model was built, trained the indivi
 
 ## Setup
 
+### Download Image from Docker HUB directly for No build and Direct Run.
+**tag: v.1.0.dev for developer flask and cpu support (light weight only ~4GB)** <br/> 
+**tag: v.2.0.gpu.official for GUNIcorn based server and gpu support enabled docker (~15.5GB)**
+> https://hub.docker.com/r/abhayramasamy/minigptproject/tags 
+
 ### 1. Clone and install
 ```bash
 git clone <this-repo-url>
@@ -75,10 +80,6 @@ docker build -t minigpt-server .
 #bash script for gpu based building:
 docker build -f filepath/Dockerfile.gpu -t minigpt-inf-gpu . 
 ```
-### Download Image from Docker HUB no build (select tag: v:1.0.dev for developer version cpu support only build)
-https://hub.docker.com/r/abhayramasamy/minigptproject/tags 
-
-**New version for GPU support and GUNICORN Based multirequest server coming in new release on DockerHUB**
 <br/>
 
 ### Run
