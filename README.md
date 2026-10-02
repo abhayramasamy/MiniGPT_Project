@@ -27,7 +27,7 @@ Download `tinystories_50m_model.weights.h5` from the **Releases** page of this r
 **Option B — from Hugging Face**<br/>
 Also see Model card on Hugging face to know important model details, You can download the optimizer.npz file too incase you are planning to train/finetune.<br/> 
 *Visit my Hugging face Repo: :*
-`[https://huggingface.co/ARX1A07/miniGPT_Project/tree/main]`
+https://huggingface.co/ARX1A07/miniGPT_Project/tree/main
 
 Either way, once downloaded:
 ```
@@ -37,7 +37,7 @@ miniGPT-server/
 ```
 
 **See how it was built**: <br/>
-Observe the google colab notebook on how the model was built, trained the individual architectures`[https://colab.research.google.com/drive/1DUSM24y3hcrc06BduC47kyWnciu8OGZg?usp=sharing]`
+Observe the google colab notebook on how the model was built, trained the individual architectures  https://colab.research.google.com/drive/1DUSM24y3hcrc06BduC47kyWnciu8OGZg?usp=sharing
 
 ---
 
@@ -71,6 +71,15 @@ curl http://localhost:5000/
 ```bash
 docker build -t minigpt-server .
 ```
+```bash
+#bash script for gpu based building:
+docker build -f filepath/Dockerfile.gpu -t minigpt-inf-gpu . 
+```
+### Download Image from Docker HUB no build (select tag: v:1.0.dev for developer version cpu support only build)
+https://hub.docker.com/r/abhayramasamy/minigptproject/tags 
+
+**New version for GPU support and GUNICORN Based multirequest server coming in new release on DockerHUB**
+<br/>
 
 ### Run
 ```bash
@@ -83,7 +92,7 @@ curl http://localhost:5000/
 ```
 
 > GPU variant: swap `tensorflow-cpu` → `tensorflow` in `requirements.txt` and use a CUDA-enabled base image if running on GPU hardware. TensorFlow will auto-detect the GPU — no code changes required.
-
+> New GPU variant available using `Dockerfile.gpu` in the building process 
 ---
 
 ## API Reference
@@ -147,11 +156,11 @@ Not yet included in `v0.0.1`. Planned via `flasgger` or an OpenAPI spec + Swagge
 ## Notes for the future
 
 - [ ] Add Swagger/OpenAPI docs (`/apidocs`)
-- [ ] Swap Flask dev server → gunicorn/waitress for real concurrent-request handling
-- [ ] Build a minimal streaming frontend + a live `/dev/stats` dashboard
-- [ ] GPU-enabled Docker image (`Dockerfile.gpu`) as a first-class variant
-- [ ] Lightweight CI: run test suite + build image on push
-- [ ] Simple "push new model version" flow: upload weights → auto-run test suite → promote on pass
+- [ ] Swap Flask dev server → gunicorn/waitress for real concurrent-request handling  (New update using *gunicorn* in Dockerfile.gpu)
+- [ ] Build a minimal streaming frontend + a live `/dev/stats` dashboard  (Available in streamlit a minmal implementation) 
+- [ ] GPU-enabled Docker image (`Dockerfile.gpu`) as a first-class variant  (New update in Dockerfile.gpu and requirements-gpu.txt file) 
+- [ ] Lightweight CI: run test suite + build image on push (Upcoming)
+- [ ] Simple "push new model version" flow: upload weights → auto-run test suite → promote on pass (Upcoming)
 - [ ] Longer-context / larger-parameter follow-up model, once infra above is solid
 
 ---
